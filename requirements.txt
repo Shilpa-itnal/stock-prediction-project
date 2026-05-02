@@ -1,0 +1,11 @@
+flask
+yfinance
+pandas
+numpy
+scikit-learn
+matplotlib
+mplfinance
+tensorflow
+feedparser
+textblob
+werkzeug

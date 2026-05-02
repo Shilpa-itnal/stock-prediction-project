@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">📈 StockAI Pro</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/predict">LSTM Predict</a>
+        <a href="/compare">Model Compare</a>
+        <a href="/sentiment">News Sentiment</a>
+        <a href="/history">History</a>
+        <a href="/logout" class="logout">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+    <h1>{{ symbol }} Stock Dashboard</h1>
+
+    <div class="grid">
+        <div class="card">Latest Price <span>{{ latest_price }}</span></div>
+        <div class="card">High Price <span>{{ high_price }}</span></div>
+        <div class="card">Low Price <span>{{ low_price }}</span></div>
+        <div class="card">Average Volume <span>{{ avg_volume }}</span></div>
+        <div class="card">RSI Value <span>{{ rsi_value }}</span></div>
+        <div class="card signal">Recommendation <span>{{ recommendation }}</span></div>
+    </div>
+
+    <div class="reason-box">
+        <h3>Recommendation Reason</h3>
+        <p>{{ reason }}</p>
+    </div>
+
+    <h2>Line Trend Chart</h2>
+    <img src="/{{ line_graph }}" class="graph">
+
+    <h2>Candlestick Chart</h2>
+    <img src="/{{ candle_graph }}" class="graph">
+</div>
+
+</body>
+</html>

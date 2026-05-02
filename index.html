@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StockAI Home</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">📈 StockAI Pro</div>
+    <div class="nav-links">
+        <a href="/" class="active">Home</a>
+        <a href="/predict">LSTM Predict</a>
+        <a href="/compare">Model Compare</a>
+        <a href="/sentiment">News Sentiment</a>
+        <a href="/history">History</a>
+        <a href="/logout" class="logout">Logout</a>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>Welcome, {{ username }}</h1>
+    <p>Advanced Stock Market Analysis, Deep Learning Prediction and Sentiment System</p>
+
+    <form action="/dashboard" method="POST">
+        <input type="text" name="symbol" placeholder="Enter Stock Symbol: AAPL, TSLA, INFY.NS" required>
+        <button type="submit">Analyze Stock</button>
+    </form>
+
+    <div class="features">
+        <div class="feature-card">🧠 LSTM Deep Learning</div>
+        <div class="feature-card">📰 News Sentiment</div>
+        <div class="feature-card">📊 Candlestick Chart</div>
+        <div class="feature-card">📉 RMSE / MAE</div>
+        <div class="feature-card">✅ Buy/Sell Signal</div>
+    </div>
+</div>
+
+</body>
+</html>

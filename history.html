@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">📈 StockAI Pro</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/predict">LSTM Predict</a>
+        <a href="/compare">Model Compare</a>
+        <a href="/sentiment">News Sentiment</a>
+        <a href="/history" class="active">History</a>
+        <a href="/logout" class="logout">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Prediction History</h1>
+
+    <table>
+        <tr>
+            <th>Stock Symbol</th>
+            <th>Predicted Price</th>
+            <th>Model</th>
+            <th>Date</th>
+        </tr>
+
+        {% for row in records %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>
