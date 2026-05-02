@@ -30,7 +30,7 @@ This project predicts stock prices using Machine Learning and LSTM. It analyzes 
 (Add your project screenshots here)
 
 ## ▶️ How to Run
-git clone https://github.com/your-username/stock-prediction-project.git  
+git clone https://github.com/shilpa-itnal/stock-prediction-project.git  
 cd stock-prediction-project  
 pip install -r requirements.txt  
 python app.py  
