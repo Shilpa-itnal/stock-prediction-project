@@ -9,3 +9,4 @@ tensorflow
 feedparser
 textblob
 werkzeug
+gunicorn
