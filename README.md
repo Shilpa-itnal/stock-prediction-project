@@ -39,4 +39,5 @@ python app.py
 To analyze stock market trends and help users make better decisions using AI.
 
 ## 👩‍💻 Author
-Your Name
+Shilpa Itnal
+
